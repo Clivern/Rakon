@@ -3,11 +3,11 @@
     <h3 align="center">Bunglon</h3>
     <p align="center">Never Remember a Linux Command for Developers & Sysadmins</p>
     <p align="center">
-        <a href="https://github.com/Clivern/Bunglon/actions">
-            <img src="https://github.com/Clivern/Bunglon/workflows/Build/badge.svg">
+        <a href="https://github.com/Clivern/Bunglon/actions/workflows/build.yml">
+            <img src="https://github.com/Clivern/Bunglon/actions/workflows/build.yml/badge.svg">
         </a>
-        <a href="https://github.com/Clivern/Bunglon/actions">
-            <img src="https://github.com/Clivern/Bunglon/workflows/Release/badge.svg">
+        <a href="https://github.com/Clivern/Bunglon/actions/workflows/release.yml">
+            <img src="https://github.com/Clivern/Bunglon/actions/workflows/release.yml/badge.svg">
         </a>
         <a href="https://github.com/Clivern/Bunglon/releases">
             <img src="https://img.shields.io/badge/Version-0.0.1-red.svg">

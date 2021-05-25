@@ -1,7 +1,7 @@
 <p align="center">
     <img src="/assets/logo.png" width="230" />
     <h3 align="center">Bunglon</h3>
-    <p align="center">Never Remember a Linux Command for Developers & Sysadmins</p>
+    <p align="center">Linux Command Line Tool for Developers</p>
     <p align="center">
         <a href="https://github.com/Clivern/Bunglon/actions/workflows/build.yml">
             <img src="https://github.com/Clivern/Bunglon/actions/workflows/build.yml/badge.svg">

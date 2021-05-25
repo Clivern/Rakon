@@ -16,7 +16,7 @@ var Verbose bool
 
 var rootCmd = &cobra.Command{
 	Use: "bunglon",
-	Short: `Never Remember a Linux Command Tool for SysAdmins
+	Short: `Never Remember a Linux Command for Developers & Sysadmins
 
 If you have any suggestions, bug reports, or annoyances please report
 them to our issue tracker at <https://github.com/clivern/bunglon/issues>`,

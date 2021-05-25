@@ -4,6 +4,6 @@
 
 package ubuntu
 
-// Group type
-type Group struct {
+// Network type
+type Network struct {
 }

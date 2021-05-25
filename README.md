@@ -1,7 +1,7 @@
 <p align="center">
     <img src="/assets/gopher.png" width="230" />
     <h3 align="center">Bunglon</h3>
-    <p align="center">Never Remember a Linux Command for Sysadmins</p>
+    <p align="center">Never Remember a Linux Command for Developers & Sysadmins</p>
     <p align="center">
         <a href="https://github.com/Clivern/Bunglon/actions">
             <img src="https://github.com/Clivern/Bunglon/workflows/Build/badge.svg">

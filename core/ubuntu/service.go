@@ -3,3 +3,7 @@
 // license that can be found in the LICENSE file.
 
 package ubuntu
+
+// Service type
+type Service struct {
+}

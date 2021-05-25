@@ -5,33 +5,22 @@
 package cmd
 
 import (
-	"fmt"
-	"runtime"
-	"strings"
-
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
 
-var distroCmd = &cobra.Command{
-	Use:   "distro",
-	Short: "Print the Linux Distribution",
+var networkCmd = &cobra.Command{
+	Use:   "network",
+	Short: "Manage Linux Network",
 	Run: func(cmd *cobra.Command, args []string) {
 		if Verbose {
 			log.SetLevel(log.DebugLevel)
 		}
 
-		log.Debug("Distribution command got called.")
-
-		fmt.Println(
-			fmt.Sprintf(
-				`OS: %s`,
-				strings.Title(runtime.GOOS),
-			),
-		)
+		log.Debug("Network command got called.")
 	},
 }
 
 func init() {
-	rootCmd.AddCommand(distroCmd)
+	rootCmd.AddCommand(networkCmd)
 }

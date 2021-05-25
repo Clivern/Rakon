@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="/assets/gopher.png" width="230" />
+    <img src="/assets/logo.png" width="230" />
     <h3 align="center">Bunglon</h3>
     <p align="center">Never Remember a Linux Command for Developers & Sysadmins</p>
     <p align="center">

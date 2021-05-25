@@ -48,7 +48,7 @@ check_license:
 test_short:
 	@echo ">> ============= Running Short Tests ============= <<"
 	$(GO) clean -testcache
-	$(GO) test -short $(pkgs)
+	$(GO) test -mod=readonly -short $(pkgs)
 
 
 ## test: Run test cases.
@@ -56,7 +56,7 @@ test_short:
 test:
 	@echo ">> ============= Running All Tests ============= <<"
 	$(GO) clean -testcache
-	$(GO) test -tags=unit -v -cover $(pkgs)
+	$(GO) test -mod=readonly -tags=unit -v -cover $(pkgs)
 
 
 ## integration: Run integration test cases.
@@ -64,7 +64,7 @@ test:
 integration:
 	@echo ">> ============= Running All Tests ============= <<"
 	$(GO) clean -testcache
-	$(GO) test -tags=integration -v -cover $(pkgs)
+	$(GO) test -mod=readonly -tags=integration -v -cover $(pkgs)
 
 
 ## lint: Lint the code.
@@ -102,7 +102,7 @@ vet:
 coverage:
 	@echo ">> ============= Coverage ============= <<"
 	rm -f coverage.html cover.out
-	$(GO) test -coverprofile=cover.out $(pkgs)
+	$(GO) test -mod=readonly -coverprofile=cover.out $(pkgs)
 	go tool cover -html=cover.out -o coverage.html
 
 
@@ -115,7 +115,6 @@ ci: style check_license test vet lint
 ## run: Run the cmd tool
 .PHONY: run
 run:
-	-cp -n config.dist.yml config.prod.yml
 	$(GO) run bunglon.go
 
 

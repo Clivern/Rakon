@@ -49,14 +49,14 @@ build:
 .PHONY: i
 i:
 	@echo ">> ============= Interactive shell ============= <<"
-	$(iex) -S mix
+	$(iex) -S mix phx.server
 
 
 ## migrate: Create database
 .PHONY: migrate
 migrate:
 	@echo ">> ============= Create database ============= <<"
-	$(mix) ecto.create
+	$(mix) ecto.setup
 
 
 ## run: Run rakon
@@ -66,6 +66,6 @@ run:
 	$(mix) phx.server
 
 
-## ci: Build docs
+## ci: Run ci
 .PHONY: ci
 ci: test

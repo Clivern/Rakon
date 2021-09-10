@@ -10,6 +10,16 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
+
+## Database
+
+To run postgresql with docker
+
+```zsh
+$ docker run -itd -e POSTGRES_USER=rakon -e POSTGRES_PASSWORD=rakon -p 5432:5432 --name postgresql postgres:latest
+```
+
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/

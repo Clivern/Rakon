@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :rakon, Rakon.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "rakon",
+  password: "rakon",
   hostname: "localhost",
   database: "rakon_dev",
   stacktrace: true,

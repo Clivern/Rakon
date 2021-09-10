@@ -19,14 +19,11 @@ jobs:
       - name: Get dependencies
         run: make deps
 
-      - name: Check rune format
+      - name: Check rakon format
         run: make fmt_check
 
-      - name: Test rune
+      - name: Test rakon
         run: make ci
 
-      - name: Analyze rune
-        run: make analyze
-
-      - name: Build rune
+      - name: Build rakon
         run: make build

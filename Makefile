@@ -45,32 +45,25 @@ build:
 	$(mix) compile --warnings-as-errors
 
 
-## analyze: Analyze code
-.PHONY: analyze
-analyze:
-	@echo ">> ============= Build code ============= <<"
-	$(mix) dialyzer
-
-
-## docs: Build docs
-.PHONY: docs
-docs:
-	@echo ">> ============= Build docs ============= <<"
-	$(mix) docs
-
-
-## publish: Publish rune
-.PHONY: publish
-publish:
-	@echo ">> ============= Publish rune ============= <<"
-	$(mix) hex.publish
-
-
 ## i: Run interactive shell
 .PHONY: i
 i:
 	@echo ">> ============= Interactive shell ============= <<"
 	$(iex) -S mix
+
+
+## migrate: Create database
+.PHONY: migrate
+migrate:
+	@echo ">> ============= Create database ============= <<"
+	$(mix) ecto.create
+
+
+## run: Run rakon
+.PHONY: run
+run:
+	@echo ">> ============= Run rakon ============= <<"
+	$(mix) phx.server
 
 
 ## ci: Build docs

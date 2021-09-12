@@ -9,6 +9,15 @@ To start the application:
 Now you can visit [localhost:4000](http://localhost:4000) from your browser.
 
 
+### Notes
+
+To create a topic model & migration files.
+
+```
+$ mix phx.gen.schema Topic topic title:string
+```
+
+
 ### Database
 
 To run `postgresql` with `docker`

@@ -22,7 +22,7 @@ defmodule RakonWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/topic/new", TopicController, :new
+    get "/topic", TopicController, :index
   end
 
   # Other scopes may use custom stacks.

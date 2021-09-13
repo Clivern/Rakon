@@ -6,6 +6,6 @@ defmodule RakonWeb.TopicController do
   use RakonWeb, :controller
 
   def index(conn, _params) do
-    render(conn, "topic.html")
+    render(conn, "index.html", username: "Joe")
   end
 end
